@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: white; /* Set background color to white */
+  color: #ffffff; /* Set text color to black */
+}
+
+.example-form {
+  width: 90%;
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.example-full-width {
+  width: calc(24% - 10px); /* 25% - margin */
+}
+
+.button-row {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.example-card {
+  width: 80%;
+}
+
+.mat-card {
+  margin-bottom: 20px;
+}
+

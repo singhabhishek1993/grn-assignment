@@ -1,0 +1,77 @@
+<div class="container">
+  <mat-card class="example-card">
+    <form class="example-form">
+      <h2>Create GRN #{{ formCount }}</h2>
+
+      <div class="row">
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Item Category</mat-label>
+          <select matNativeControl placeholder="Choose item category" required>
+            <option value="" selected></option>
+            <option value="fruits">Fruits</option>
+            <option value="vegetables">Vegetables</option>
+            <option value="dairy">Dairy</option>
+          </select>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Item</mat-label>
+          <select matNativeControl placeholder="Choose item" required>
+            <option value="" selected></option>
+            <option value="apple">Apple</option>
+            <option value="banana">Banana</option>
+            <option value="carrot">Carrot</option>
+          </select>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Select Strain</mat-label>
+          <select matNativeControl placeholder="Choose strain" required>
+            <option value="" selected></option>
+            <option value="gala">Gala</option>
+            <option value="fuji">Fuji</option>
+            <option value="honeycrisp">Honeycrisp</option>
+          </select>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Quantity</mat-label>
+          <input matInput type="number" placeholder="Enter quantity" required>
+        </mat-form-field>
+      </div>
+
+      <div class="row">
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>UoM</mat-label>
+          <input matInput placeholder="UoM"  required disabled>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Total Cost</mat-label>
+          <input matInput type="number" placeholder="Enter total cost" required>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Cost Per Unit</mat-label>
+          <input matInput type="number" placeholder="Enter cost per unit" required>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Supplier</mat-label>
+          <select matNativeControl placeholder="Choose supplier" required>
+            <option value="" selected></option>
+            <option value="supplier_a">Supplier A</option>
+            <option value="supplier_b">Supplier B</option>
+            <option value="supplier_c">Supplier C</option>
+          </select>
+        </mat-form-field>
+      </div>
+
+      <div class="button-row">
+        <button mat-raised-button color="warn" style="color: green; margin-right: auto;" type="reset">CLEAR ALL</button>
+        <button mat-raised-button style="background-color: green; color: white; text-align: center;" type="submit">SUBMIT</button>
+        <button mat-raised-button color="warn" style="margin-left: auto;" type="button" (click)="delete()">DELETE</button>
+      </div>
+    </form>
+  </mat-card>
+</div>
